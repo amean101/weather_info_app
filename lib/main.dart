@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// This section is causing errors! TODO: Look into this!
 class _TabsNonScrollableDemo extends StatefulWidget {
   @override
   __TabsNonScrollableDemoState createState() => TabsNonScrollableDemoState();
